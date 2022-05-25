@@ -10,9 +10,9 @@
 
  <body>
  <h1>Juego del Ahorcado</h1>
-    <p class="parrafo">Encuentra la palabra escondida, presiona una letra y te deseo mucha suerte</p>
+    <p class="parrafo">Encuentra la palabra escondida, presiona una letra</p>
     
-	<input class="Empezar" type="button" value="EMPEZAR EL JUEGO!"/>
+	<input class="Empezar" type="button" value="EMPEZAR EL JUEGO!" onclick="functionletter()"/>
 
 
     <div class="game-container">
@@ -55,8 +55,8 @@
     <div class="ingpalabra">
         <h2 class="tituloingresarpalabra" id="tituloingresarpalabras"> Añadir una palabra a las opciones </h2>
         <input class="ingpalboxtext" id="addword" type="text" style="text-transform:uppercase;">
-        <input class="ingpalbox" id="botonaniadir" type="button" value="Añadir"/>
-        <input class="ingpalbox" id="otrapalabra" type="button" value="Cambiar palabra"/>   
+        <input class="ingpalbox" id="botonañadir" type="button" value="Añadir" onclick="añadirpalabra()"/>
+        <input class="ingpalbox" id="otrapalabra" type="button" value="Cambiar palabra" onclick="otrapalabra()"/>   
     </div>
 
 
@@ -74,7 +74,7 @@
     </footer>
 
 
-    <script src="script.js"></script>
+    <script src="/ahorcado.js"></script>
 
 </body>
 </html>
